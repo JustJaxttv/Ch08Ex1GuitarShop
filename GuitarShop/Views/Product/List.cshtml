@@ -18,7 +18,7 @@
                     <a asp-controller="Product" asp-action="List" asp-route-id="@category.Name" 
                        class="@Model.CheckActiveCategory(category.Name)
                              @(ViewBag.SelectedCategoryName == category.Name ? "active" : "")">
-                        @c.Name
+                        @category.Name
                     </a>
 
             }
